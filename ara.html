@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="REFRESH" content="60">
+<title>ara</title>
+<style type="text/css">
+body {
+ background: #f0f0f5;
+}
+p,span {
+ font-family: monospace;
+}
+p {
+ margin-right: 6em;
+}
+p.phase {
+ font-weight: bold;
+ margin-bottom: 0;
+}
+p.result, p.WARNING, p.error {
+ margin-top: 0;
+ margin-bottom: 0;
+ margin-left: 5em;
+}
+span.status {
+ float: right;
+ margin-top: -1em;
+}
+.passed, .completed {
+ color: #00D000;
+}
+.WARNING, .warning {
+ color: #555500;
+}
+.FAILED, .error {
+ color: #DD0000;
+}
+</style>
+</head>
+<body>
+<h1 class="experiment">/usr/local/share/pocketsphinx/model/ara</h1>
+<h2 class="hostname">Training ara on mcnamara</h2>
+<hr>
+<h3>MODULE: 000 Computing feature from audio files	(2017-10-23 19:10)</h3>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///usr/local/share/pocketsphinx/model/ara/logdir/000.comp_feat/ara.train-1-1.log">Log File</a></p><p class='error'>ERROR: This step had 1 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p class='audio files'>Extracting features from  segments starting at  (part 1 of 1) </p>
+<p class='result'>sphinx_fe <a href="file:///usr/local/share/pocketsphinx/model/ara/logdir/000.comp_feat/ara.test-1-1.log">Log File</a></p><p class='error'>ERROR: This step had 1 ERROR messages and 0 WARNING messages.  Please check the log file for details.</p>
+<span class='status completed'>completed</span>
+<p>Feature extraction is done</p>
+<hr>
+<h3>MODULE: 00 verify training files	(2017-10-23 19:10)</h3>
+<p class='phase'>Phase 1: Checking to see if the dict and filler dict agrees with the phonelist file.</p>
+<p class='result'>Found 4 words using 10 phones</p>
+<p class='warning'>WARNING: This phone (00) occurs in the dictionary (/usr/local/share/pocketsphinx/model/ara/etc/ara.dic), but not in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone)</p>
+<p class='warning'>WARNING: This phone (A) occurs in the dictionary (/usr/local/share/pocketsphinx/model/ara/etc/ara.dic), but not in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone)</p>
+<p class='warning'>WARNING: This phone (C) occurs in the dictionary (/usr/local/share/pocketsphinx/model/ara/etc/ara.dic), but not in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone)</p>
+<p class='warning'>WARNING: This phone (E) occurs in the dictionary (/usr/local/share/pocketsphinx/model/ara/etc/ara.dic), but not in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone)</p>
+<p class='warning'>WARNING: This phone (I) occurs in the dictionary (/usr/local/share/pocketsphinx/model/ara/etc/ara.dic), but not in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone)</p>
+<p class='warning'>WARNING: This phone (L) occurs in the dictionary (/usr/local/share/pocketsphinx/model/ara/etc/ara.dic), but not in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone)</p>
+<p class='warning'>WARNING: This phone (N) occurs in the dictionary (/usr/local/share/pocketsphinx/model/ara/etc/ara.dic), but not in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone)</p>
+<p class='warning'>WARNING: This phone (R) occurs in the dictionary (/usr/local/share/pocketsphinx/model/ara/etc/ara.dic), but not in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone)</p>
+<p class='warning'>WARNING: This phone (T) occurs in the dictionary (/usr/local/share/pocketsphinx/model/ara/etc/ara.dic), but not in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone)</p>
+<p class='warning'>WARNING: This phone () occurs in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone), but not in the dictionary (/usr/local/share/pocketsphinx/model/ara/etc/ara.dic)</p>
+<p class='warning'>WARNING: This phone (OO) occurs in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone), but not in the dictionary (/usr/local/share/pocketsphinx/model/ara/etc/ara.dic)</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 2: Checking to make sure there are not duplicate entries in the dictionary</p>
+<span class='status passed'>passed</span>
+<p class='phase'>Phase 3: Check general format for the fileids file; utterance length (must be positive); files exist</p>
+<p class='warning'>WARNING: Error in '/usr/local/share/pocketsphinx/model/ara/etc/ara_train.fileids', the feature file '/usr/local/share/pocketsphinx/model/ara/feat/speaker1/file_1.mfc' does not exist, or is empty</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 4: Checking number of lines in the transcript file should match lines in fileids file</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 5: Determine amount of training data, see if n_tied_states seems reasonable.</p>
+<p class='result'>Estimated Total Hours Training: -2.13675213675214e-07</p>
+<p class='error'>ERROR: Not enough data for the training, we can only train CI models (set CFG_CD_TRAIN to "no")</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 6: Checking that all the words in the transcript are in the dictionary</p>
+<p class='result'>Words in dictionary: 1</p>
+<p class='result'>Words in filler dictionary: 3</p>
+<p class='warning'>WARNING: This word: elettronica was in the transcript file, but is not in the dictionary (<s> elettronica </s> ). Do cases match?</p>
+<p class='warning'>WARNING: Bad line in transcript:
+</p>
+<p class='warning'>WARNING: Bad line in transcript:
+</p>
+<span class='status FAILED'>FAILED</span>
+<p class='phase'>Phase 7: Checking that all the phones in the transcript are in the phonelist, and all phones in the phonelist appear at least once</p>
+<p class='warning'>WARNING: This phone () occurs in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone), but not in any word in the transcription (/usr/local/share/pocketsphinx/model/ara/etc/ara_train.transcription)</p>
+<p class='warning'>WARNING: This phone (OO) occurs in the phonelist (/usr/local/share/pocketsphinx/model/ara/etc/ara.phone), but not in any word in the transcription (/usr/local/share/pocketsphinx/model/ara/etc/ara_train.transcription)</p>
+<span class='status FAILED'>FAILED</span>
